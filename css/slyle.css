@@ -11,7 +11,27 @@
 --font-family:"Roboto"
 }
 
+.container{
+width: 1200px;
+outline: 1px solid red;
+margin-right: auto;
+margin-left: auto;
+padding-left: 15px;
+padding-right: 15px;
 
+}
+
+.header{
+padding-top: 24px;
+padding-bottom: 25px;
+
+}
+
+.header-box{
+display: flex;
+align-items: center;
+
+}
 
 .header-logo{
     font-family: "Raleway";
@@ -19,6 +39,13 @@ font-weight: 700;
 font-size: 26px;
 letter-spacing: 0.03em;
 color: var(--accent-color);
+margin-right: 93px;
+}
+
+.header-list{
+display: flex;
+gap: 50px;
+
 }
 
 .header-studio{
@@ -39,6 +66,13 @@ color: var(--text-color);
     color: var(--accent-color);
 }
 
+.header-items{
+display: flex;
+gap: 50px;
+margin-left: 344px;
+
+}
+
 .header-contact{
 
     font-family: var(--font-family);
@@ -52,8 +86,10 @@ color: var(--added-text);
     color: var(--accent-color);
 }
 .hero{
-
+padding-top: 200px;
+padding-bottom: 227px;
     background-color: var(--fotter-bg);
+    text-align: center;
 }
 .hero-title{
 font-weight: 900;
@@ -63,6 +99,9 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 text-align: center;
 color: var(--main-color);
+width: 696px;
+margin-left: auto;
+margin-right: auto;
 
 }
 
@@ -77,6 +116,20 @@ color: var(--main-color);
 border-radius: 4px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 background: var(--accent-color);
+margin-top: 30px;
+padding: 10px 32px;
+}
+
+.requirements{
+padding-top: 94px;
+padding-bottom: 94px;
+
+}
+
+.requirements-list{
+display: flex;
+gap: 30px;
+
 }
 
 .requirements-title{
@@ -88,6 +141,7 @@ line-height: normal;
 letter-spacing: 0.42px;
 text-transform: uppercase;
 color: var(--text-color);
+margin-bottom: 10px;
 
 }
 
@@ -103,6 +157,18 @@ letter-spacing: 0.42px;
 
 }
 
+.work{
+padding-bottom: 94px;
+
+}
+
+.work-list{
+display: flex;
+gap: 30px;
+
+
+}
+
 .work-title{
 color: var(--text-color);
 text-align: center;
@@ -112,6 +178,7 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 letter-spacing: 1.08px;
+margin-bottom: 50px;
 
 
 }
@@ -125,12 +192,28 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 letter-spacing: 1.08px;
+margin-bottom: 50px;
 
 
 }
 
 .team{
 background-color: var(--team-bg);
+padding-top: 94px;
+padding-bottom: 94px;
+}
+
+.team-list{
+display: flex;
+gap: 30px;
+
+}
+
+.team-wrap{
+padding-top: 30px;
+padding-bottom: 30px;
+background-color: var(--main-color);
+
 
 }
 
@@ -143,6 +226,7 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 letter-spacing: 0.48px;
+margin-bottom: 10px;
 
 
 }
@@ -162,7 +246,8 @@ letter-spacing: 0.48px;
 
 .fotter{
 background-color: var(--fotter-bg);
-
+padding-top: 60px;
+padding-bottom: 60px;
 }
 
 .fotter-logo{
@@ -173,6 +258,8 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 letter-spacing: 0.78px;
+display: inline-block;
+margin-bottom: 20px;
 
 
 }
@@ -181,6 +268,29 @@ letter-spacing: 0.78px;
 color: var(--main-color);
 
 }
+
+.fotter-list{
+display: flex;
+flex-direction: column;
+gap: 9px;
+
+}
+
+/* .fotter-item{
+margin-bottom: 9px;
+
+
+}
+
+.fotter-item:last-child{
+margin-bottom: 0px;
+
+} */
+
+/* .fotter-item:not(:last-child){
+margin-bottom: 9px;
+
+} */
 
 .fotter-link{
 color:var(--main-color);
@@ -205,6 +315,87 @@ letter-spacing: 0.42px;
 
 }
 
+/* portfolio */
+
+.cart{
+padding-top: 94px;
+padding-bottom: 94px;
+
+}
+
+.cart-list{
+display: flex;
+justify-content: center;
+gap: 8px;
+margin-bottom: 50px;
+
+}
+
+.cart-butt{
+color: var(--text-color);
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0.48px;
+padding: 6px 22px;
+border-radius: 4px;
+background: var(--team-bg);
+border: none;
+
+
+}
+
+.cart-butt:hover{
+background-color: var(--accent-color);
+color: var(--main-color);
+
+}
+
+.cart-items{
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+
+}
+
+.cart-elem{
+outline: 1px solid #EEE;
+
+}
+
+.cart-wrap{
+padding: 20px 22px;
+
+}
+
+.cart-title{
+transform: rotate(0.589deg);
+color: var(--text-color);
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px;
+letter-spacing: 1.08px;
+margin-bottom: 4px;
+
+
+}
+
+.cart-text{
+color: var(--added-text);
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0.48px;
+
+
+}
 
 
 
