@@ -169,6 +169,16 @@ gap: 30px;
 
 }
 
+.work-item{
+flex-basis: calc((100% - 60px)/3);
+
+}
+
+.work-pic{
+width: 100%;
+
+}
+
 .work-title{
 color: var(--text-color);
 text-align: center;
@@ -206,6 +216,17 @@ padding-bottom: 94px;
 .team-list{
 display: flex;
 gap: 30px;
+
+
+}
+
+.team-item{
+flex-basis: calc((100% - 90px)/4);
+
+}
+
+.team-pic{
+width: 100%;
 
 }
 
@@ -363,6 +384,13 @@ gap: 30px;
 
 .cart-elem{
 outline: 1px solid #EEE;
+flex-basis: calc((100% - 60px)/3);
+
+}
+
+.cart-pic{
+width: 100%;
+
 
 }
 
