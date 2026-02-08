@@ -13,7 +13,7 @@
 
 .container{
 width: 1200px;
-outline: 1px solid red;
+/* outline: 1px solid red; */
 margin-right: auto;
 margin-left: auto;
 padding-left: 15px;
@@ -90,6 +90,11 @@ padding-top: 200px;
 padding-bottom: 227px;
     background-color: var(--fotter-bg);
     text-align: center;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../imges/hero.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    /* background-image: rgba(47, 48, 58, 0.4); */
 }
 .hero-title{
 font-weight: 900;
@@ -249,24 +254,23 @@ padding-bottom: 94px;
 display: flex;
 gap: 30px;
 
-
 }
 
 .team-item{
 flex-basis: calc((100% - 90px)/4);
-
+box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+border-radius: 0 0 4px 4px;
 }
 
 .team-pic{
 width: 100%;
-
 }
 
 .team-wrap{
 padding-top: 30px;
 padding-bottom: 30px;
 background-color: var(--main-color);
-
+border-radius: 0 0 4px 4px;
 
 }
 
@@ -373,8 +377,9 @@ letter-spacing: 0.42px;
 .cart{
 padding-top: 94px;
 padding-bottom: 94px;
-
+border-top: 1px solid var(--header-line);
 }
+
 
 .cart-list{
 display: flex;
@@ -404,7 +409,7 @@ border: none;
 .cart-butt:hover{
 background-color: var(--accent-color);
 color: var(--main-color);
-
+box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .cart-items{
@@ -417,6 +422,11 @@ gap: 30px;
 .cart-elem{
 outline: 1px solid #EEE;
 flex-basis: calc((100% - 60px)/3);
+
+}
+
+.cart-elem:hover{
+box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 
 }
 
