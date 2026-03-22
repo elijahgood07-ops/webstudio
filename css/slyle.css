@@ -12,6 +12,11 @@
 --client-icon:#afb1b8;
 }
 
+body{
+font-family: var(--font-family);
+
+}
+
 .container{
 width: 1200px;
 outline: 1px solid red;
@@ -54,7 +59,6 @@ gap: 50px;
 }
 
 .header-link{
-font-family: var(--font-family);
 font-weight: 500;
 font-size: 14px;
 letter-spacing: 0.02em;
@@ -91,7 +95,6 @@ fill: var(--added-text);
 
 .header-contact{
 display: flex;
-    font-family: var(--font-family);
 font-weight: 500;
 font-size: 14px;
 letter-spacing: 0.02em;
@@ -139,7 +142,6 @@ color: transparent;
 }
 
 .hero-btn{
-font-family: var(--font-family);
 font-weight: 700;
 font-size: 16px;
 line-height: 188%;
@@ -195,9 +197,7 @@ background-image: url(../imges/diagram.png);
 }
 
 .requirements-title{
-font-family: Roboto;
 font-size: 14px;
-font-style: normal;
 font-weight: 700;
 line-height: normal;
 letter-spacing: 0.42px;
@@ -210,9 +210,7 @@ margin-bottom: 10px;
 .requirements-text {
 
     color: var(--added-text);
-font-family: Roboto;
 font-size: 14px;
-font-style: normal;
 font-weight: 400;
 line-height: 24px;
 letter-spacing: 0.42px;
@@ -233,7 +231,8 @@ gap: 30px;
 
 .work-item{
 flex-basis: calc((100% - 60px)/3);
-
+position: relative;
+text-align: center;
 }
 
 .work-pic{
@@ -244,9 +243,7 @@ width: 100%;
 .work-title{
 color: var(--text-color);
 text-align: center;
-font-family: Roboto;
 font-size: 36px;
-font-style: normal;
 font-weight: 700;
 line-height: normal;
 letter-spacing: 1.08px;
@@ -258,13 +255,28 @@ margin-bottom: 50px;
 .team-title{
 color:var(--text-color);
 text-align: center;
-font-family: Roboto;
 font-size: 36px;
-font-style: normal;
 font-weight: 700;
 line-height: normal;
 letter-spacing: 1.08px;
 margin-bottom: 50px;
+
+
+}
+
+.work-text{
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+text-align: center;
+color: var(--main-color);
+position: absolute;
+bottom: 0;
+width: 100%;
+padding: 27px 0;
+background: rgba(47, 48, 58, 0.8);
+
 
 
 }
@@ -307,12 +319,12 @@ margin-top: 16px;
 .team-picture{
 width: 20px;
 height: 20px;
-fill: #AFB1B8;
+fill: var(--client-icon);
 
 }
 
 .team-icon:hover{
-background-color: #2196f3;
+background-color: var(--accent-color);
 .team-picture{
 fill: var(--main-color);
 
@@ -334,9 +346,7 @@ border-radius: 0 0 4px 4px;
 .team-camphon{
 color:var(--text-color);
 text-align: center;
-font-family: Roboto;
 font-size: 16px;
-font-style: normal;
 font-weight: 500;
 line-height: normal;
 letter-spacing: 0.48px;
@@ -348,9 +358,7 @@ margin-bottom: 10px;
 .team-text{
 color:var(--added-text);
 text-align: center;
-font-family: Roboto;
 font-size: 16px;
-font-style: normal;
 font-weight: 400;
 line-height: normal;
 letter-spacing: 0.48px;
@@ -384,8 +392,8 @@ gap: 30px;
 
 
 .client-link:hover{
-fill: #2196F3;
-border-color: #2196F3;
+fill: var(--accent-color);
+border-color: var(--accent-color);
 .client-pic{
 fill: var(--accent-color);
 
@@ -427,7 +435,6 @@ align-items: baseline;
 color: var(--accent-color);
 font-family: Raleway;
 font-size: 26px;
-font-style: normal;
 font-weight: 700;
 line-height: normal;
 letter-spacing: 0.78px;
@@ -467,7 +474,6 @@ margin-bottom: 9px;
 
 .fotter-link{
 color:var(--main-color);
-font-family: Roboto;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
@@ -479,7 +485,6 @@ letter-spacing: 0.42px;
 
 .fotter-cont{
 color:var(--footer-contact);
-font-family: Roboto;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
@@ -546,9 +551,7 @@ margin-bottom: 50px;
 .cart-butt{
 color: var(--text-color);
 text-align: center;
-font-family: Roboto;
 font-size: 16px;
-font-style: normal;
 font-weight: 500;
 line-height: 26px;
 letter-spacing: 0.48px;
@@ -598,9 +601,7 @@ padding: 20px 22px;
 .cart-title{
 transform: rotate(0.589deg);
 color: var(--text-color);
-font-family: Roboto;
 font-size: 18px;
-font-style: normal;
 font-weight: 700;
 line-height: 36px;
 letter-spacing: 1.08px;
@@ -611,9 +612,7 @@ margin-bottom: 4px;
 
 .cart-text{
 color: var(--added-text);
-font-family: Roboto;
 font-size: 16px;
-font-style: normal;
 font-weight: 400;
 line-height: 30px;
 letter-spacing: 0.48px;
