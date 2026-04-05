@@ -12,6 +12,11 @@
 --client-icon:#afb1b8;
 }
 
+html{
+scroll-behavior: smooth;
+
+}
+
 body{
 font-family: var(--font-family);
 
@@ -30,7 +35,12 @@ padding-right: 15px;
 .header{
 padding-top: 24px;
 padding-bottom: 25px;
-
+/* fixed header */
+position: fixed;
+width: 100%;
+background-color: rgb(255,255,255,0.5);
+backdrop-filter: blur(10px);
+z-index: 1;
 }
 
 .header-box{
@@ -58,11 +68,28 @@ gap: 50px;
     color: var(--logo-color);
 }
 
+.header-item{
+position: relative;
+
+}
+
 .header-link{
 font-weight: 500;
 font-size: 14px;
 letter-spacing: 0.02em;
 color: var(--text-color);
+
+}
+
+.header-link-carent::after{
+content: "";
+background-color: var(--accent-color);
+width: 100%;
+height: 4px;
+border-radius: 2px;
+display: block;
+position: absolute;
+top: 45px;
 
 }
 
@@ -633,16 +660,39 @@ gap: 30px;
 .cart-elem{
 outline: 1px solid #EEE;
 flex-basis: calc((100% - 60px)/3);
+position: relative;
 
 }
 
 .cart-elem:hover{
 box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+.cart-write{
+opacity: 1;
 
+}
 }
 
 .cart-pic{
 width: 100%;
+
+}
+
+.cart-write{
+font-weight: 400;
+font-size: 18px;
+line-height: 156%;
+letter-spacing: 0.03em;
+color: var(--main-color);
+position: absolute;
+top: 0;
+left: 0;
+padding: 63px 24px;
+background: rgba(33, 150, 243, 0.9);
+opacity: 0;
+
+}
+
+.cart-write:hover{
 
 
 }
@@ -850,3 +900,24 @@ display: block;
 margin: auto;
 }
 
+/* scroll */
+.scroll-top{
+width: 44px;
+height: 44px;
+border-radius: 50%;
+background-color: var(--accent-color);
+display: flex;
+align-items: center;
+justify-content: center;
+position: fixed;
+right: 50px;
+bottom: 50px;
+
+}
+
+.scroll-icon{
+width: 25px;
+height: 25px;
+fill: var(--added-text);
+
+}
