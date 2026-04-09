@@ -78,7 +78,9 @@ font-weight: 500;
 font-size: 14px;
 letter-spacing: 0.02em;
 color: var(--text-color);
-
+transition-property: color;
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .header-link-carent::after{
@@ -118,6 +120,9 @@ height: 16px;
 width: 16px;
 height: 12px;
 fill: var(--added-text);
+transition-property: fill;
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .header-contact{
@@ -128,6 +133,9 @@ letter-spacing: 0.02em;
 color: var(--added-text);
 align-items: center;
 gap: 10px;
+transition-property: color;
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 
 }
 
@@ -149,6 +157,7 @@ padding-bottom: 227px;
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
+    
     /* background-image: rgba(47, 48, 58, 0.4); */
 }
 .hero-title{
@@ -166,6 +175,8 @@ background-clip: text;
 background-image: url(../imges/giphy.gif);
 background-position: bottom;
 color: transparent;
+position: sticky;
+    top: 0;
 }
 
 .hero-btn{
@@ -334,6 +345,9 @@ display: flex;
 justify-content: center;
 align-items: center;
 fill: white;
+transition-property: background-color;
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .team-items{
@@ -347,6 +361,9 @@ margin-top: 16px;
 width: 20px;
 height: 20px;
 fill: var(--client-icon);
+transition-property: fill;
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 
 }
 
@@ -437,13 +454,18 @@ border: 1px solid var(--client-icon);
 border-radius: 4px;
 width: 170px;
 height: 92px;
+transition-property: fill, border-color;
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .client-pic{
 fill: var(--client-icon);
 width: 106px;
 height: 60px;
-
+transition-property: fill;
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .fotter{
@@ -520,6 +542,25 @@ letter-spacing: 0.42px;
 
 }
 
+.footer-cont{
+transition-property: background-color;
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+border-radius: 50%;
+background-color: rgba(255, 255, 255, 0.10);
+width: 44px;
+height: 44px;
+display: flex;
+justify-content: center;
+align-items: center;
+fill: var(--main-color);
+}
+
+.footer-cont:hover{
+background-color: var(--accent-color);
+
+}
+
 .footer-wrap{
 margin-left: 70px;
 
@@ -539,17 +580,6 @@ display: flex;
 gap: 10px;
 }
 
-.footer-cont{
-border-radius: 50%;
-background-color: rgba(255, 255, 255, 0.10);
-width: 44px;
-height: 44px;
-display: flex;
-justify-content: center;
-align-items: center;
-fill: var(--main-color);
-
-}
 
 .footer-icon{
 width: 20px;
@@ -640,6 +670,9 @@ padding: 6px 22px;
 border-radius: 4px;
 background: var(--team-bg);
 border: none;
+transition-property: color, box-shadow, background-color;
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 
 
 }
@@ -661,7 +694,9 @@ gap: 30px;
 outline: 1px solid #EEE;
 flex-basis: calc((100% - 60px)/3);
 position: relative;
-
+transition-property: box-shadow;
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .cart-elem:hover{
@@ -689,12 +724,9 @@ left: 0;
 padding: 63px 24px;
 background: rgba(33, 150, 243, 0.9);
 opacity: 0;
-
-}
-
-.cart-write:hover{
-
-
+transition-property: opacity;
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .cart-wrap{
@@ -754,6 +786,7 @@ box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1
 background: var(--main-color);
 position: relative;
 padding: 40px;
+z-index: 2;
 
 }
 
@@ -784,7 +817,9 @@ fill: var(--accent-color);
 width: 25px;
 height: 25px;
 fill: var(--logo-color);
-
+transition-property: fill;
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .model-title{
@@ -814,6 +849,9 @@ border-radius: 4px;
 width: 448px;
 height: 40px;
 display: block;
+transition-property: outline;
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .model-input:hover{
@@ -832,6 +870,9 @@ height: 18px;
 position: absolute;
 top: 25px;
 left: 12px;
+transition-property: fill;
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .model-comment{
