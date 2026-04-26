@@ -1,0 +1,124 @@
+.cart{
+padding-top: 94px;
+padding-bottom: 94px;
+border-top: 1px solid var(--header-line );
+}
+
+
+.cart-list{
+display: flex;
+justify-content: center;
+gap: 8px;
+margin-bottom: 50px;
+
+}
+
+.cart-butt{
+color: var(--text-color);
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0.48px;
+padding: 6px 22px;
+border-radius: 4px;
+background: var(--team-bg);
+border: none;
+transition-property: color, box-shadow, background-color transform;
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+
+}
+
+.cart-butt:hover{
+background-color: var(--accent-color);
+color: var(--main-color);
+box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
+transform: scale(1.2);
+}
+
+.cart-items{
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+
+}
+
+.cart-elem{
+outline: 1px solid #EEE;
+flex-basis: calc((100% - 60px)/3);
+position: relative;
+transition-property: box-shadow, transform;
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.cart-elem:hover{
+box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+transform-origin: top right;
+transform: rotate(10deg);
+.cart-write{
+opacity: 1;
+transform: scale(1) rotate(0);
+}
+}
+
+.cart-box{
+overflow: hidden;
+position: relative;
+
+}
+
+.cart-pic{
+width: 100%;
+
+}
+
+.cart-write{
+font-weight: 400;
+font-size: 18px;
+line-height: 156%;
+letter-spacing: 0.03em;
+color: var(--main-color);
+position: absolute;
+top: 0;
+left: 0;
+padding: 63px 24px;
+background: rgba(33, 150, 243, 0.9);
+opacity: 0;
+transition-property: opacity;
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+transform: scale(0) rotate(180deg);
+transition-property: transform;
+transition-duration: 500ms;
+}
+
+
+.cart-wrap{
+padding: 20px 22px;
+
+}
+
+.cart-title{
+transform: rotate(0.589deg);
+color: var(--text-color);
+font-size: 18px;
+font-weight: 700;
+line-height: 36px;
+letter-spacing: 1.08px;
+margin-bottom: 4px;
+
+
+}
+
+.cart-text{
+color: var(--added-text);
+font-size: 16px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0.48px;
+
+
+}

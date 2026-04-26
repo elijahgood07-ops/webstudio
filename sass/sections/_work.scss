@@ -1,0 +1,51 @@
+.work{
+padding-bottom: 94px;
+
+}
+
+.work-list{
+display: flex;
+gap: 30px;
+
+
+}
+
+.work-text{
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+text-align: center;
+color: var(--main-color);
+position: absolute;
+bottom: 0;
+width: 100%;
+padding: 27px 0;
+background: rgba(47, 48, 58, 0.8);
+
+
+
+}
+
+.work-item{
+flex-basis: calc((100% - 60px)/3);
+position: relative;
+text-align: center;
+}
+
+.work-pic{
+width: 100%;
+
+}
+
+.work-title{
+color: var(--text-color);
+text-align: center;
+font-size: 36px;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.08px;
+margin-bottom: 50px;
+
+
+}
