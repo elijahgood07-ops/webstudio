@@ -1,8 +1,9 @@
+@use "../base/var" as*;
 .scroll-top{
 width: 44px;
 height: 44px;
 border-radius: 50%;
-background-color: var(--accent-color);
+background-color: $accent-color;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -15,6 +16,6 @@ bottom: 50px;
 .scroll-icon{
 width: 25px;
 height: 25px;
-fill: var(--added-text);
+fill: $added-text;
 
 }

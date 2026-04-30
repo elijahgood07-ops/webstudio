@@ -1,3 +1,4 @@
+@use "../base/var" as*;
 .work{
 padding-bottom: 94px;
 
@@ -16,7 +17,7 @@ font-size: 14px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 text-align: center;
-color: var(--main-color);
+color: $main-color;
 position: absolute;
 bottom: 0;
 width: 100%;
@@ -39,7 +40,7 @@ width: 100%;
 }
 
 .work-title{
-color: var(--text-color);
+color: $text-color;
 text-align: center;
 font-size: 36px;
 font-weight: 700;
