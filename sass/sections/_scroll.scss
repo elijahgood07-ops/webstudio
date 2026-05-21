@@ -1,5 +1,7 @@
 @use "../base/var" as*;
-.scroll-top{
+@use "../utils/placeholder" as*;
+.scroll{
+&__top{
 width: 44px;
 height: 44px;
 border-radius: 50%;
@@ -13,9 +15,11 @@ bottom: 50px;
 
 }
 
-.scroll-icon{
+&__icon{
 width: 25px;
 height: 25px;
 fill: $added-text;
+
+}
 
 }

@@ -1,13 +1,23 @@
 @use "../base/var" as*;
+@use "../utils/placeholder" as*;
 .header{
-padding-top: 24px;
-padding-bottom: 25px;
+padding-top: 10px;
+padding-bottom: 10px;
 /* fixed header */
 position: fixed;
 width: 100%;
 background-color: rgb(255,255,255,0.5);
 backdrop-filter: blur(10px);
 z-index: 1;
+@media screen and (min-width:768px){
+padding-top: 21px;
+padding-bottom: 21px;
+}
+@media screen and (min-width:1200px){
+padding-top: 24px;
+padding-bottom: 25px;
+ 
+}
 
 &__box{
 display: flex;
@@ -16,16 +26,37 @@ align-items: center;
 }
 
 &__logo{
-    font-family: "Raleway";
+  font-family: "Raleway";
+  margin-right: auto;
 font-weight: 700;
-font-size: 26px;
+font-size: 24px;
 letter-spacing: 0.03em;
 color: $accent-color;
+
+
+@media screen and (min-width:768px){
+  margin-right: 87px;
+
+}
+
+
+@media screen and (min-width:1200px){
+font-size: 26px;
 margin-right: 93px;
+}
 }
 
 &__studio{
     color: $logo-color;
+}
+
+&__navigator{
+display: none;
+
+@media screen and (min-width:768px){
+  display: block;
+}
+
 }
 
 &__list{
@@ -45,8 +76,7 @@ font-size: 14px;
 letter-spacing: 0.02em;
 color: $text-color;
 transition-property: color;
-transition-duration: 350ms;
-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+@extend %transition;
 
 &:hover{
 
@@ -66,9 +96,7 @@ top: 45px;
 opacity: 0;
 transform: scale(0);
 transition-property: opacity, transform;
-transition-duration: 350ms;
-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-
+@extend %transition;
 
 
 }
@@ -90,11 +118,21 @@ color: $accent-color;
 }
 
 &__items{
-display: flex;
-gap: 30px;
+display: none;
+gap: 10px;
 margin-left: auto;
 
+@media screen and (min-width:768px){
+display: flex;
+flex-direction: column;
 }
+
+@media screen and (min-width:1200px){
+flex-direction: row;
+gap: 30px;
+}
+}
+
 
 &__elem{
 animation-name: contactmove;
@@ -122,8 +160,7 @@ color: $added-text;
 align-items: center;
 gap: 10px;
 transition-property: color;
-transition-duration: 350ms;
-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+@extend %transition;
 /* animation-name: contactmove;
 animation-duration: 1000ms;
 animation-direction: alternate;
@@ -143,11 +180,9 @@ width: 16px;
 height: 12px;
 fill: $added-text;
 transition-property: fill;
-transition-duration: 350ms;
-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+@extend %transition;
 }
 }
-
 
 
 

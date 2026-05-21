@@ -1,17 +1,16 @@
 @use "../base/var" as*;
+@use "../utils/placeholder" as*;
 .work{
 padding-bottom: 94px;
 
-}
-
-.work-list{
+&__list{
 display: flex;
 gap: 30px;
 
 
 }
 
-.work-text{
+&__text{
 font-weight: 700;
 font-size: 14px;
 letter-spacing: 0.03em;
@@ -28,18 +27,18 @@ background: rgba(47, 48, 58, 0.8);
 
 }
 
-.work-item{
+&__item{
 flex-basis: calc((100% - 60px)/3);
 position: relative;
 text-align: center;
 }
 
-.work-pic{
+&__pic{
 width: 100%;
 
 }
 
-.work-title{
+&__title{
 color: $text-color;
 text-align: center;
 font-size: 36px;
@@ -50,3 +49,5 @@ margin-bottom: 50px;
 
 
 }
+}
+

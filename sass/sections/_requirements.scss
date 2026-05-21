@@ -1,17 +1,17 @@
 @use "../base/var" as*;
+@use "../utils/placeholder" as*;
 .requirements{
 padding-top: 94px;
 padding-bottom: 94px;
 
-}
-
-.requirements-list{
+&__list{
 display: flex;
 gap: 30px;
 
 }
+&__item{
 
-.requirements-item::before{
+&::before{
 content: "";
 display: block;
 width: 270px;
@@ -24,23 +24,26 @@ background-repeat: no-repeat;
 background-position: center;
 background-size: 70px;
 }
-
-.requirements-item:nth-child(2)::before{
+&:nth-child(2)::before{
 background-image: url(../imges/clock.png);
 
 }
 
-.requirements-item:nth-child(3)::before{
+&:nth-child(3)::before{
 background-image: url(../imges/diagram.png);
 
 }
 
-.requirements-item:nth-child(4)::before{
+&:nth-child(4)::before{
     background-image: url(../imges/astronaut.png);
 
 }
+}
 
-.requirements-title{
+
+
+
+&__title{
 font-size: 14px;
 font-weight: 700;
 line-height: normal;
@@ -51,7 +54,7 @@ margin-bottom: 10px;
 
 }
 
-.requirements-text {
+&__text {
 
     color: $added-text;
 font-size: 14px;
@@ -60,3 +63,11 @@ line-height: 24px;
 letter-spacing: 0.42px;
 
 }
+}
+
+
+
+
+
+
+

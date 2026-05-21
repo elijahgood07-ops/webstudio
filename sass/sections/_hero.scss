@@ -1,25 +1,35 @@
 @use "../base/var" as*;
+@use "../utils/placeholder" as*;
 .hero{
-padding-top: 200px;
-padding-bottom: 227px;
+padding-top: 118px;
+padding-bottom: 118px;
     background-color: $fotter-bg;
     text-align: center;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../imges/hero.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
-    
-    /* background-image: rgba(47, 48, 58, 0.4); */
+
+
+    @media screen and (min-width:768px){
+  
 }
-.hero-title{
+
+
+@media screen and (min-width:1200px){
+ padding-top: 200px;
+ padding-bottom: 200px;
+}
+    
+    &__title{
 font-weight: 900;
-font-size: 44px;
+font-size: 26px;
 line-height: 136%;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 text-align: center;
 color: $main-color;
-width: 696px;
+width: 100%;
 margin-left: auto;
 margin-right: auto;
 background-clip: text;
@@ -27,10 +37,22 @@ background-image: url(../imges/giphy.gif);
 background-position: bottom;
 color: transparent;
 position: sticky;
-    top: 0;
+top: 0;
+
+@media screen and (min-width:480px){
+  width: 360px;
 }
 
-.hero-btn{
+@media screen and (min-width:768px){
+
+}
+
+@media screen and (min-width:1200px){
+  font-size: 44px;
+  width: 696px;
+}
+}
+&__btn{
 font-weight: 700;
 font-size: 16px;
 line-height: 188%;
@@ -41,12 +63,21 @@ border-radius: 4px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 background: $accent-color;
 margin-top: 30px;
-padding: 10px 32px;
+padding: 10px 24px;
 animation-name: btnmove;
 animation-duration: 3000ms;
 animation-direction: alternate;
 animation-iteration-count: infinite;
+
+ @media screen and (min-width:1200px){
+padding: 10px 32px;
 }
+}
+
+}
+
+
+
 
 @keyframes btnmove{
 0%{

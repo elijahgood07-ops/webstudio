@@ -1,11 +1,11 @@
 @use "../base/var" as*;
+@use "../utils/placeholder" as*;
+@use "../utils/mixin" as*;
 .client{
 padding-bottom: 94px;
 padding-top: 94px;
 
-}
-
-.client-camphon{
+&__camphon{
 margin-bottom: 50px;
 font-weight: 700;
 font-size: 36px;
@@ -14,20 +14,20 @@ text-align: center;
 color: $text-color;
 }
 
-.client-list{
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 30px;
-
+&__list{
+// display: flex;
+// justify-content: center;
+// align-items: center;
+// gap: 30px;
+@include flexbox($gap:30px)
 }
 
 
 
-.client-link:hover{
+&__link:hover{
 fill: $accent-color;
 border-color: $accent-color;
-.client-pic{
+.client__pic{
 fill: $accent-color;
 
 
@@ -35,24 +35,25 @@ fill: $accent-color;
 
 }
 
-.client-link{
-    display: flex;
-justify-content: center;
-align-items: center;
+&__link{
+//     display: flex;
+// justify-content: center;
+// align-items: center;
+@include flexbox ();
 border: 1px solid $client-icon;
 border-radius: 4px;
 width: 170px;
 height: 92px;
 transition-property: fill, border-color;
-transition-duration: 350ms;
-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+@extend %transition;
 }
 
-.client-pic{
+&__pic{
 fill: $client-icon;
 width: 106px;
 height: 60px;
 transition-property: fill;
-transition-duration: 350ms;
-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+@extend %transition;
 }
+}
+

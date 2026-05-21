@@ -1,20 +1,20 @@
 @use "../base/var" as*;
+@use "../utils/placeholder" as*;
+@use "../utils/mixin" as*;
 .cart{
 padding-top: 94px;
 padding-bottom: 94px;
 border-top: 1px solid $header-line;
-}
 
-
-.cart-list{
-display: flex;
-justify-content: center;
-gap: 8px;
+&__list{
+// display: flex;
+// justify-content: center;
+// gap: 8px;
 margin-bottom: 50px;
 
 }
 
-.cart-butt{
+&__butt{
 color: $text-color;
 text-align: center;
 font-size: 16px;
@@ -26,57 +26,56 @@ border-radius: 4px;
 background: $team-bg;
 border: none;
 transition-property: color, box-shadow, background-color transform;
-transition-duration: 350ms;
-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+@extend %transition;
 
 
 }
 
-.cart-butt:hover{
+&__butt:hover{
 background-color: $accent-color;
 color: $main-color;
 box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
 transform: scale(1.2);
 }
 
-.cart-items{
+&__items{
 display: flex;
 flex-wrap: wrap;
 gap: 30px;
 
 }
 
-.cart-elem{
+&__elem{
 outline: 1px solid #EEE;
 flex-basis: calc((100% - 60px)/3);
 position: relative;
 transition-property: box-shadow, transform;
-transition-duration: 350ms;
-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+@extend %transition;
 }
 
-.cart-elem:hover{
+&__elem:hover{
 box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 transform-origin: top right;
 transform: rotate(10deg);
-.cart-write{
+.cart__write{
 opacity: 1;
 transform: scale(1) rotate(0);
 }
 }
 
-.cart-box{
+&__box{
 overflow: hidden;
 position: relative;
 
 }
 
-.cart-pic{
+&__pic{
 width: 100%;
 
 }
 
-.cart-write{
+&__write{
 font-weight: 400;
 font-size: 18px;
 line-height: 156%;
@@ -88,24 +87,22 @@ left: 0;
 padding: 63px 24px;
 background: rgba(33, 150, 243, 0.9);
 opacity: 0;
-transition-property: opacity;
-transition-duration: 350ms;
-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+transition-property: transform, opacity;
+@extend %transition;
 transform: scale(0) rotate(180deg);
-transition-property: transform;
-transition-duration: 500ms;
+
 }
 
 
-.cart-wrap{
+&__wrap{
 padding: 20px 22px;
 
 }
 
-.cart-title{
+&__title{
 transform: rotate(0.589deg);
 color: $text-color;
-font-size: 18px;
+font-size: 17px;
 font-weight: 700;
 line-height: 36px;
 letter-spacing: 1.08px;
@@ -114,7 +111,7 @@ margin-bottom: 4px;
 
 }
 
-.cart-text{
+&__text{
 color: $added-text;
 font-size: 16px;
 font-weight: 400;
@@ -123,3 +120,6 @@ letter-spacing: 0.48px;
 
 
 }
+}
+
+
