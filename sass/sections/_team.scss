@@ -6,8 +6,15 @@
 
 .team{
 background-color: $team-bg;
-padding-top: 94px;
+padding-top: 60px;
+padding-bottom: 60px;
+
+
+@media screen and (min-width:1200px){
 padding-bottom: 94px;
+padding-top: 94px;
+}
+
 
 &__title{
 color:var(--text-color);
@@ -18,20 +25,46 @@ line-height: normal;
 letter-spacing: 1.08px;
 margin-bottom: 50px;
 
+@media screen and (min-width:480px){
+font-size: 28px;
+margin-bottom: 30px;
+}
+
+@media screen and (min-width:768px){
+font-size: 28px;
+margin-bottom: 30px;
+}
+
+
 
 }
 
 &__list{
 display: flex;
 gap: 30px;
+flex-wrap: wrap;
+
 
 }
 
 &__item{
-flex-basis: calc((100% - 90px)/4);
+flex-basis: 100%;
 box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 border-radius: 0 0 4px 4px;
 transition-property: transform;
+
+@media screen and (min-width:480px){
+flex-basis: 450px
+}
+
+@media screen and (min-width:768px){
+flex-basis: calc((100% - 30px)/2);
+}
+
+@media screen and (min-width:1200px){
+flex-basis: calc((100% - 90px)/4);
+}
+
 
 @extend %transition;
 }

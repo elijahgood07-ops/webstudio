@@ -2,16 +2,43 @@
 @use "../utils/placeholder" as*;
 @use "../utils/mixin" as*;
 .cart{
-padding-top: 94px;
-padding-bottom: 94px;
+padding-top: 60px;
+padding-bottom: 60px;
 border-top: 1px solid $header-line;
 
-&__list{
-// display: flex;
-// justify-content: center;
-// gap: 8px;
-margin-bottom: 50px;
+@media screen and (min-width:480px){
+}
 
+@media screen and (min-width:768px){
+
+}
+
+@media screen and (min-width:1200px){
+padding-top: 94px;
+padding-bottom: 94px;
+}
+&__list{
+display: flex;
+justify-content: start;
+gap: 8px;
+margin-bottom: 50px;
+flex-wrap: wrap;
+
+
+@media screen and (min-width:480px){
+margin-bottom: 40px;
+
+
+}
+
+@media screen and (min-width:768px){
+margin-bottom: 30px;
+justify-content: center;
+}
+
+@media screen and (min-width:1200px){
+
+}
 }
 
 &__butt{
@@ -28,7 +55,18 @@ border: none;
 transition-property: color, box-shadow, background-color transform;
 @extend %transition;
 
+@media screen and (min-width:480px){
+flex-wrap: wrap;
+display: flex;
+}
 
+@media screen and (min-width:768px){
+
+}
+
+@media screen and (min-width:1200px){
+
+}
 }
 
 &__butt:hover{
@@ -43,13 +81,38 @@ display: flex;
 flex-wrap: wrap;
 gap: 30px;
 
+
+@media screen and (min-width:480px){
+
+}
+
+@media screen and (min-width:768px){
+
+}
+
+@media screen and (min-width:1200px){
+
+}
 }
 
 &__elem{
 outline: 1px solid #EEE;
-flex-basis: calc((100% - 60px)/3);
+flex-basis: 100%;
 position: relative;
 transition-property: box-shadow, transform;
+
+
+@media screen and (min-width:480px){
+flex-basis: 450px;
+}
+
+@media screen and (min-width:768px){
+flex-basis: calc((100% - 30px)/2);
+}
+
+@media screen and (min-width:1200px){
+flex-basis: calc((100% - 60px)/3);
+}
 
 @extend %transition;
 }
