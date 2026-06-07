@@ -21,6 +21,9 @@
         <a href="../index.html" class="header__logo animate__animated animate__fadeInDown animate__infinite	infinite"
           >Web<span class="header__studio">Studio</span></a
         >
+        <button data-menu-open class="header__btn" type="button"><svg class="header__menu">
+          <use href="../imges/symbol-defs.svg#icon-menu"></use>
+        </svg></button>
         <nav class="header__navigator">
           <ul class="header__list">
             <li class="header__item">
@@ -226,6 +229,27 @@
         </div>
       </div>
     </footer>
+        <div data-menu class="menu is-hidden">
+          <button data-menu-close class="menu__btn" type="button"><svg class="menu__close">
+            <use href="../imges/symbol-defs.svg#icon-close"></use>
+          </svg></button>
+         <ul class="menu__list">
+          <li class="menu__item"><a href="../index.html" class="menu__link">Студія</a></li>
+          <li class="menu__item"><a href="../pages/portfolio.html" class="menu__link">Портфоліо</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Контакти</a></li>
+         </ul>
+         <ul class="menu__items">
+          <li class="menu__elem"><a href="tel:+380961111111" class="menu__contact">+38 096 111 11 11</a></li>
+          <li class="menu__elem"><a href="mailto:info@devstudio.com" class="menu__contact">info@devstudio.com</a></li>
+         </ul>
+         <ul class="menu__sosials">
+          <li class="menu__itm"><a href="" class="menu__sosial">Instagram</a></li>
+          <li class="menu__itm"><a href="" class="menu__sosial">Twitter</a></li>
+          <li class="menu__itm"><a href="" class="menu__sosial">Facebook</a></li>
+          <li class="menu__itm"><a href="" class="menu__sosial">LinkedIn</a></li>
+         </ul>
+        </div>
+        <script type="module" src="../js/menu.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
   AOS.init();

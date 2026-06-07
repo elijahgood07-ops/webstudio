@@ -1,25 +1,25 @@
 @use "../base/var" as*;
 @use "../utils/placeholder" as*;
-.scroll{
-&__top{
-width: 44px;
-height: 44px;
-border-radius: 50%;
-background-color: $accent-color;
-display: flex;
-align-items: center;
-justify-content: center;
-position: fixed;
-right: 50px;
-bottom: 50px;
+// .scroll{
+// &__top{
+// width: 44px;
+// height: 44px;
+// border-radius: 50%;
+// background-color: $accent-color;
+// display: flex;
+// align-items: center;
+// justify-content: center;
+// position: fixed;
+// right: 50px;
+// bottom: 50px;
 
-}
+// }
 
-&__icon{
-width: 25px;
-height: 25px;
-fill: $added-text;
+// &__icon{
+// width: 25px;
+// height: 25px;
+// fill: $added-text;
 
-}
+// }
 
-}
+// }
