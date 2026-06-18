@@ -1,91 +1,114 @@
-@use "../base/var" as*;
-@use "../utils/placeholder" as*;
-.hero{
-padding-top: 118px;
-padding-bottom: 118px;
-    background-color: $fotter-bg;
+@use "../base/var" as *;
+@use "../utils/placeholder" as *;
+.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-color: $fotter-bg;
+  text-align: center;
+  background-image:
+    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../imges/mobile/hero-mobile@1x.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image:
+      linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../imges/mobile/hero-mobile@2x.webp);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image:
+      linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../imges/tablet/hero-tablet@1x.webp);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../imges/tablet/hero-tablet@2x.webp);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-image:
+      linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../imges/dekstop/hero-dekstop@1x.webp);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../imges/dekstop/hero-dekstop@2x.jpg);
+    }
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 136%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
     text-align: center;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../imges/hero.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover;
+    color: $main-color;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-clip: text;
+    background-image: url(../imges/giphy.gif);
+    background-position: bottom;
+    color: transparent;
+    position: sticky;
+    top: 0;
 
+    @media screen and (min-width: 480px) {
+      width: 360px;
+    }
 
-    @media screen and (min-width:768px){
-  
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      width: 696px;
+    }
+  }
+  &__btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 188%;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: $main-color;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: $accent-color;
+    margin-top: 30px;
+    padding: 10px 24px;
+    animation-name: btnmove;
+    animation-duration: 3000ms;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+    @media screen and (min-width: 1200px) {
+      padding: 10px 32px;
+    }
+  }
 }
 
-
-@media screen and (min-width:1200px){
- padding-top: 200px;
- padding-bottom: 200px;
-}
-    
-    &__title{
-font-weight: 900;
-font-size: 26px;
-line-height: 136%;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-text-align: center;
-color: $main-color;
-width: 100%;
-margin-left: auto;
-margin-right: auto;
-background-clip: text;
-background-image: url(../imges/giphy.gif);
-background-position: bottom;
-color: transparent;
-position: sticky;
-top: 0;
-
-@media screen and (min-width:480px){
-  width: 360px;
-}
-
-@media screen and (min-width:768px){
-
-}
-
-@media screen and (min-width:1200px){
-  font-size: 44px;
-  width: 696px;
-}
-}
-&__btn{
-font-weight: 700;
-font-size: 16px;
-line-height: 188%;
-letter-spacing: 0.06em;
-text-align: center;
-color: $main-color;
-border-radius: 4px;
-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-background: $accent-color;
-margin-top: 30px;
-padding: 10px 24px;
-animation-name: btnmove;
-animation-duration: 3000ms;
-animation-direction: alternate;
-animation-iteration-count: infinite;
-
- @media screen and (min-width:1200px){
-padding: 10px 32px;
-}
-}
-
-}
-
-
-
-
-@keyframes btnmove{
-0%{
-transform: scale(0.9);
-
-}
-100%{
-transform: scale(1.1);
-
-}
+@keyframes btnmove {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1.1);
+  }
 }

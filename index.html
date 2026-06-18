@@ -114,15 +114,24 @@
           <h2 class="work__title">Чим ми займаємося</h2>
           <ul class="work__list">
             <li class="work__item">
+              <picture>
+                <source srcset="/imges/dekstop/imgkomp-destop@1x.webp 1x, /imges/dekstop/imgkomp-destop@2x.webp 2x" media="(min-width:1200px)">
               <img class="work__pic" src="./imges/comp.webp" alt="comp" />
+              </picture>
               <p class="work__text">Десктопні додатки</p>
             </li>
             <li class="work__item">
+              <picture>
+                <source srcset="/imges/dekstop/imgtell-destop@1x.webp 1x, /imges/dekstop/imgtell-destop@2x.webp 2x" media="(min-width:1200px)">
               <img class="work__pic" src="./imges/tell.webp" alt="tell" />
+              </picture>
               <p class="work__text">Мобільні додатки</p>
             </li>
             <li class="work__item">
+              <picture>
+                <source srcset="./imges/dekstop/imgplacshet-destop@1x.webp 1x, ./imges/dekstop/imgplacshet-destop@2x.webp 2x" media="(min-width:1200px)">
               <img class="work__pic" src="./imges/tablet.webp" alt="tablet" />
+              </picture>
               <p class="work__text">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -134,12 +143,19 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
+              <picture>
+                <source srcset="./imges/dekstop/igor-destop@1x.webp 1x, ./imges/dekstop/igor-destop@2x.webp 2x" media="(min-width:1200px)">
+                <source srcset="./imges/tablet/igor-tablet@1x.webp 1x, ./imges/tablet/igor-tablet@2x.webp 2x" media="(min-width:768px)">
+                <source srcset="./imges/mobile/igor-mobile@1x.webp 1x, ./imges/mobile/igor-mobile@2x.webp 2x" media="(max-width:767px)">
+
+                
               <img
                 class="team__pic"
                 src="./imges/igor.webp"
                 alt="igor"
                 width="270"
               />
+              </picture>
               <div class="team__wrap">
                 <h3 class="team__camphon">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -180,12 +196,19 @@
               </div>
             </li>
             <li class="team__item">
+              <picture>
+                <source srcset="./imges/dekstop/olga-destop@1x.webp 1x, ./imges/dekstop/olga-destop@2x.webp 2x" media="(min-width:1200px)">
+                <source srcset="./imges/tablet/olga-tablet@1x.webp 1x, ./imges/tablet/olga-tablet@2x.webp 2x" media="(min-width:768px)"> 
+                <source srcset="./imges/mobile/olga-mobile@1x.webp 1x, ./imges/mobile/olga-mobile@2x.webp 2x" media="(max-width:767px)">
+
+
               <img
                 class="team__pic"
                 src="./imges/oliga.webp"
                 alt="oliga"
                 width="270"
               />
+              </picture>
               <div class="team__wrap">
                 <h3 class="team__camphon">Ольга Рєпіна</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -194,8 +217,11 @@
                     <a class="team__icon" href=""
                       ><svg class="team__picture">
                         <use
-                          href="./imges/symbol-defs.svg#icon-instagram"
-                        ></use></svg
+                       
+                       h
+                       ref="./imges/symbol-defs.svg#icon-instagram"
+                        
+                       ></use></svg
                     ></a>
                   </li>
                   <li>
@@ -226,12 +252,18 @@
               </div>
             </li>
             <li class="team__item">
+              <picture>
+                <source srcset="./imges/dekstop/imgmikola-destop@1x.webp 1x, ./imges/dekstop/imgmikola-destop@2x.webp 2x" media="(min-width:1200px)">
+                <source srcset="./imges/tablet/imgmikola-tablet@1x.webp 1x, ./imges/tablet/imgmikola-tablet@2x.webp 2x" media="(min-width:768px)">
+                <source srcset="./imges/mobile/imgmikola-mobile@1x.webp 1x, ./imges/mobile/imgmikola-mobile@2x.webp 2x" media="(max-width:767px)">
+
               <img
                 class="team__pic"
                 src="./imges/mikola.webp"
                 alt="mikola"
                 width="270"
               />
+              </picture>
               <div class="team__wrap">
                 <h3 class="team__camphon">Микола Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -272,12 +304,19 @@
               </div>
             </li>
             <li class="team__item">
+              <picture>
+                <source srcset="./imges/dekstop/imgmixailo-destop@1x.webp 1x, ./imges/dekstop/imgmixailo-destop@2x.webp 2x" media="(min-width:1200px)">
+                <source srcset="./imges/tablet/imgmixailo-tablet@1.webp 1x, ./imges/tablet/imgmixailo-tablet@2.webp 2x" media="(min-width:768px)">
+                <source srcset="./imges/mobile/imgmixailo-mobile@1x.webp 1x, ./imges/mobile/imgmixailo-mobile@2x.webp 2x" media="(max-width:767px)">
+
+
               <img
                 class="team__pic"
                 src="./imges/mixailo.webp"
                 alt="mixailo"
                 width="270"
               />
+              </picture>
               <div class="team__wrap">
                 <h3 class="team__camphon">Михайло Єрмаков</h3>
                 <p class="team__text">UI Designer</p>
@@ -440,7 +479,7 @@
       <div class="model">
         <button data-modal-close class="model__close" type="button">
           <svg class="model__pic">
-            <use href="./imges/symbol-defs.svg#icon-close"></use>
+            <use href="./imges/symbol-defs.svg#icon__close"></use>
           </svg>
         </button>
         <h2 class="model__title">Залиште свої дані, ми вам передзвонимо</h2>
@@ -448,13 +487,13 @@
           <label class="model__lable"
             >Ім'я
             <input required class="model__input" type="text" />
-            <svg class="model-icon">
+            <svg class="model__icon">
               <use href="./imges/symbol-defs.svg#icon-person"></use>
             </svg>
           </label>
           <label class="model__lable"
             >Телефон
-            <input pattern="^(\+47[\s-]?)?\d{2}[\s-]?\d{2}[\s-]?\d{2}[\s-]?\d{2}$" required class="model-input" type="tell" />
+            <input pattern="^(\+47[\s-]?)?\d{2}[\s-]?\d{2}[\s-]?\d{2}[\s-]?\d{2}$" required class="model__input" type="tell" />
             <svg class="model__icon">
               <use href="./imges/symbol-defs.svg#icon-telefon"></use>
           </label>

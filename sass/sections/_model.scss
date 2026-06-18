@@ -18,13 +18,7 @@ transition-property: transform, opacity;
 @extend %transition;
 }
 
-.is-hidden{
-opacity: 0;
-pointer-events: none;
-transform: translateY(-1000px) scale(0) rotate(360deg);
-transition-property: transform, opacity;
-@extend %transition;
-}
+
 
 .model{
 border-radius: 4px;
@@ -36,9 +30,7 @@ position: relative;
 padding: 40px;
 z-index: 2;
 
-}
-
-.model-close{
+&__close{
 width: 30px;
 height: 30px;
 border-radius: 50%;
@@ -53,15 +45,15 @@ right: 8px;
 
 }
 
-.model-close:hover{
-.model-pic{
+&__close:hover{
+.model__pic{
 fill: $accent-color;
 
 }
 
 }
 
-.model-pic{
+&__pic{
 width: 25px;
 height: 25px;
 fill: $logo-color;
@@ -69,7 +61,7 @@ transition-property: fill;
 @extend %transition;
 }
 
-.model-title{
+&__title{
 font-weight: 700;
 font-size: 20px;
 letter-spacing: 0.03em;
@@ -78,7 +70,7 @@ color: $text-color;
 margin-bottom: 12px;
 }
 
-.model-lable{
+&__lable{
 font-weight: 400;
 font-size: 12px;
 letter-spacing: 0.01em;
@@ -89,7 +81,7 @@ margin-bottom: 10px;
 position: relative;
 }
 
-.model-input{
+&__input{
 outline: 1px solid rgba(33, 33, 33, 0.2);
 border: none;
 border-radius: 4px;
@@ -100,17 +92,17 @@ transition-property: outline;
 @extend %transition;
 }
 
-.model-input:hover{
+&__input:hover{
 outline: 1px solid $accent-color
 
 }
 
-.model-input:hover+.model-icon{
+&__input:hover+.model__icon{
 fill: $accent-color;
 
 }
 
-.model-icon{
+&__icon{
 width: 18px;
 height: 18px;
 position: absolute;
@@ -120,7 +112,7 @@ transition-property: fill;
 @extend %transition;
 }
 
-.model-comment{
+&__comment{
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 width: 448px;
@@ -135,7 +127,7 @@ resize: none;
 margin-bottom: 20px;
 }
 
-.model-wrap{
+&__wrap{
 // display: flex;
 // justify-content: center;
 // align-items: center;
@@ -144,14 +136,14 @@ margin-bottom: 30px;
 
 }
 
-.model-check{
+&__check{
 width: 16px;
 height: 15px;
 margin-right: 8px;
 
 }
 
-.model-text{
+&__text{
 font-weight: 400;
 font-size: 14px;
 line-height: 171%;
@@ -160,7 +152,7 @@ color: $added-text;
 
 }
 
-.model-link{
+&__link{
 font-weight: 400;
 font-size: 14px;
 line-height: 171%;
@@ -172,7 +164,7 @@ margin-left: 5px;
 
 }
 
-.model-btn{
+&__btn{
 font-weight: 700;
 font-size: 16px;
 line-height: 188%;
@@ -189,7 +181,18 @@ transition-property: transform;
 @extend %transition;
 }
 
-.model-btn:hover{
+&__btn:hover{
 transform: scale(-1) rotate(180deg);
 
+}
+}
+
+
+
+.is-hidden{
+opacity: 0;
+pointer-events: none;
+transform: translateY(-1000px) scale(0) rotate(360deg);
+transition-property: transform, opacity;
+@extend %transition;
 }
